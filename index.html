@@ -1,15 +1,13 @@
-# ThatOther-Guy.github.io
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Coding Portfolio</title>
+    <title>Your Coding Projects</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
@@ -17,54 +15,165 @@
 
         header {
             background-color: #333;
-            color: white;
+            color: #fff;
             text-align: center;
-            padding: 1em;
+            padding: 1em 0;
+        }
+
+        nav {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 0.5em 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
         }
 
         section {
             max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 2em auto;
+            padding: 1em;
+            background-color: #fff;
             border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        .project {
-            margin-bottom: 20px;
+        h2 {
+            color: #333;
         }
 
-        .project img {
-            max-width: 100%;
-            height: auto;
+        p {
+            color: #666;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 0.5em;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 2em auto;
+            padding: 1em;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5em;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 0.5em;
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 0.5em 1em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 
 <body>
+
     <header>
-        <h1>My Coding Portfolio</h1>
+        <h1>Your Coding Projects</h1>
+        <p>Explore my coding journey and projects</p>
     </header>
 
-    <section>
-        <div class="project">
-            <h2>Project 1: Sample Project</h2>
-            <img src="images/project1.jpg" alt="Project 1">
-            <p>Description of Project 1.</p>
-            <p>Technologies used: HTML, CSS, JavaScript</p>
-        </div>
+    <nav>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-        <div class="project">
-            <h2>Project 2: Another Project</h2>
-            <img src="images/project2.jpg" alt="Project 2">
-            <p>Description of Project 2.</p>
-            <p>Technologies used: React, Node.js, MongoDB</p>
-        </div>
-
-        <!-- Add more project sections as needed -->
-
+    <section id="projects">
+        <h2>Project 1: Project Name</h2>
+        <p>Description of the project goes here. Provide a brief overview of what the project is about.</p>
+        <ul>
+            <li>Language: HTML, CSS, JavaScript</li>
+            <li>Framework: Bootstrap</li>
+            <li><a href="#">GitHub Repository</a></li>
+        </ul>
     </section>
+
+    <section>
+        <h2>Project 2: Project Name</h2>
+        <p>Description of the project goes here. Provide a brief overview of what the project is about.</p>
+        <ul>
+            <li>Language: Python</li>
+            <li>Framework: Flask</li>
+            <li><a href="#">GitHub Repository</a></li>
+        </ul>
+    </section>
+
+    <!-- Add more sections for additional projects -->
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </footer>
+
 </body>
 
 </html>
