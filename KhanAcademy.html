@@ -113,6 +113,16 @@
 </head>
 
 <body>
+    <script>
+        // JavaScript to toggle dropdown content
+        document.addEventListener('DOMContentLoaded', function () {
+            var dropdown = document.querySelector('.dropdown');
+            dropdown.addEventListener('click', function () {
+                var dropdownContent = document.querySelector('.dropdown-content');
+                dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+            });
+        });
+    </script>
 
     <header>
         <h1>Your Website Title</h1>
@@ -123,8 +133,8 @@
     </nav>
 
     <section>
-        <h2>TEST</h2>
-        <p>TEST</p>
+        <h2>Welcome to My Website!</h2>
+        <p>This is a sample section. You can replace this with your actual content.</p>
 
         <!-- Dropdown menu -->
         <div class="dropdown">
