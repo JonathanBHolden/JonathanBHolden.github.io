@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 2em 0;
+        }
+
+        nav {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 0.5em 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 1em;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #33333;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .profile-image {
+            display: block;
+            margin: 1em auto;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Dropdown styles */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-top: 1em;
+        }
+
+        .dropdown button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 0.5em 1em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 310px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 4px;
+        }
+
+        .dropdown-content a {
+            color: #333;
+            padding: 0.5em 1em;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var dropdown = document.querySelector('.dropdown');
+            dropdown.addEventListener('click', function () {
+                var dropdownContent = document.querySelector('.dropdown-content');
+                dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+            });
+        });
+    </script>
+
+    <header>
+        <h1>Machine Learning Crash Course</h1>
+    </header>
+    <nav>
+        <a href="https://JonathanBHolden.github.io" target="_blank">Projects</a>
+        <a href="https://JonathanBHolden.github.io/about.html" target="_blank">About Me</a>
+    </nav>
+
+    <section>
+        <!-- Dropdown menu -->
+        <div class="dropdown">
+            <button>Exercises</button>
+            <div class="dropdown-content">
+                <a href="https://JonathanBHolden.github.io/LRWSD.html">Linear Regression with Synthetic Data</a>
+                <a href="https://JonathanBHolden.github.io/LRWRDS.html">Linear Regression with a Real Dataset</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+    </footer>
+
+</body>
+
+</html>
